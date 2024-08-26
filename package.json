@@ -20,13 +20,20 @@
   ],
   "type": "module",
   "license": "MIT",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "ci": "node --run build",
-    "format": "prettier --write ."
+    "ci": "node --run build && node --run check-format && node --run check-exports && node --run test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack .",
+    "test": "vitest run",
+    "dev": "vitest"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.4",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   }
 }
