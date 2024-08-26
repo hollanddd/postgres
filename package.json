@@ -1,5 +1,5 @@
 {
-  "name": "postgres",
+  "name": "lit-postgres",
   "version": "0.0.3",
   "description": "Postgres utility library",
   "keywords": [
@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/hollanddd/postgres/issues"
   },
-  "author": "Darre Holland <mail@darrenholland.com> (https://darrenholland.com)",
+  "author": "Darren Holland <mail@darrenholland.com> (https://darrenholland.com)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hollanddd/postgres.git"
