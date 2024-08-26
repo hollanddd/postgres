@@ -1,6 +1,6 @@
 {
   "name": "postgres",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Postgres utility library",
   "keywords": [
     "postgres",
@@ -21,9 +21,17 @@
   "type": "module",
   "license": "MIT",
   "main": "dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
   "scripts": {
-    "build": "tsc",
-    "ci": "node --run build && node --run check-format && node --run check-exports && node --run test",
+    "build": "tsup",
+    "lint": "tsc",
+    "ci": "node --run build && node --run check-format && node --run check-exports && node --run lint && node --run test",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack .",
@@ -36,6 +44,7 @@
     "@arethetypeswrong/cli": "^0.15.4",
     "@changesets/cli": "^2.27.7",
     "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   }

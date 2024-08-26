@@ -1,5 +1,0 @@
----
-'postgres': patch
----
-
-Initial release
