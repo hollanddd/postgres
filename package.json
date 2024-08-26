@@ -1,0 +1,32 @@
+{
+  "name": "postgres",
+  "version": "0.0.1",
+  "description": "Postgres utility library",
+  "keywords": [
+    "postgres",
+    "typescript"
+  ],
+  "homepage": "https://github.com/hollanddd/postgres",
+  "bugs": {
+    "url": "https://github.com/hollanddd/postgres/issues"
+  },
+  "author": "Darre Holland <mail@darrenholland.com> (https://darrenholland.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollanddd/postgres.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "ci": "node --run build",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}
