@@ -1,5 +1,11 @@
 # postgres
 
+## 0.0.3
+
+### Patch Changes
+
+- bd75a91: Dual pacakge CJS & ESM
+
 ## 0.0.2
 
 ### Patch Changes
