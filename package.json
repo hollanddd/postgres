@@ -43,9 +43,14 @@
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.15.4",
     "@changesets/cli": "^2.27.7",
+    "@types/pg": "^8.11.6",
     "prettier": "^3.3.3",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "node-sql-parser": "^5.3.1",
+    "pg": "^8.12.0"
   }
 }
