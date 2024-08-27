@@ -1,5 +1,11 @@
 # postgres
 
+## 1.0.0
+
+### Major Changes
+
+- 33abb00: `sql` tagged template
+
 ## 0.0.4
 
 ### Patch Changes
