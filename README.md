@@ -17,7 +17,11 @@ Construct SQL queries using a [tagged template](https://developer.mozilla.org/en
 The function automatically creates a pooled database connection and connects to the databse specified by standard pg environment variables.
 
 ```typescript
- const greeting = "Hello, world!";
- const { rows, rowCount } =
-   await sql`select ${greeting}::text as "message"`;
+const greeting = "Hello, world!";
+const { rows, rowCount } =
+    await sql`select ${greeting}::text as "message"`;
 ```
+
+# Inspiration
+
+Inspired by `@vercel/postgres` and the proliferaion of `.sql` files in Node.js applications which introduces blocking io to read and is rarely cached.
